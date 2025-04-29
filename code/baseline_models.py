@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 
 '''
-Three baseline models were selected to evaluate our M2A2's performance.
+Three baseline models were selected to evaluate M2A2's performance.
 
     1) Random Forest: Ensemble of decision trees capturing non-linear interactions; robust to noise.
 
@@ -20,7 +20,8 @@ Three baseline models were selected to evaluate our M2A2's performance.
 
 # We need the same train/test split used for M2A2, so we should just save these dfs
 # TODO: Access X and y
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) 
+    # These params can change slash we don't need to use split() we should just save and load them depending how big
 
 # ---- Baseline 1: Random Forest ----
 rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
