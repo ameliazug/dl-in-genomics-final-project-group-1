@@ -1,0 +1,15 @@
+# Folders to ignore
+data/
+training_outputs/
+
+# Log and cache files
+*.log
+*.sqlite3
+*.h5
+*.hdf5
+
+# Ignore model weights or outputs if needed
+*.pt
+*.pth
+*.ckpt
+

@@ -138,6 +138,6 @@ def train_model(h5_input_path, output_model_path, epochs=20, batch_size=512):
 # --------------- Run --------------- #
 
 if __name__ == "__main__":
-    h5_input_path = "path/to/your/input_features.h5"  # <<<<=== Replace
-    output_model_path = "path/to/save/your_model.h5"  # <<<<=== Replace
+    h5_input_path = "data/A549/methyl_enrichment.h5"  # <<<<=== Replace
+    output_model_path = "training_outputs/training_outputs1.h5"  # <<<<=== Replace
     train_model(h5_input_path, output_model_path, epochs=20, batch_size=512)
